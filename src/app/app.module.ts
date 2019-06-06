@@ -6,8 +6,13 @@ import { NewsApiService } from './news-api.service';
 // Material Imports
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
-  MatButtonModule, MatCardModule, MatMenuModule,
-  MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule
+  MatButtonModule,
+  MatCardModule,
+  MatMenuModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatSidenavModule,
+  MatListModule
 } from '@angular/material';
 
 
@@ -16,16 +21,17 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent, MatButtonModule, MatCardModule, MatMenuModule,
-    MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule
+    AppComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule, MatCardModule, MatMenuModule,
+    MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule
   ],
-  providers: [NewsApiService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
