@@ -61,4 +61,9 @@
     top: 56px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .mat-card {
+    margin: 5em !important;
+  }
+ }
 
